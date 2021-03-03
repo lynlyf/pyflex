@@ -19,4 +19,4 @@ if __name__ == "__main__":
     PATH = os.path.dirname(os.path.dirname(
         os.path.abspath(inspect.getfile(inspect.currentframe()))))
 
-    sys.exit(pytest.main(PATH))
+    sys.exit(pytest.main([PATH]))
