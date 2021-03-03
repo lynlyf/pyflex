@@ -275,7 +275,7 @@ class Config(object):
         for name in attributes:
             attr = getattr(self, name)
 
-            if isinstance(attr, collections.Iterable):
+            if isinstance(attr, collections.abc.Iterable):
                 if len(attr) != npts:
                     raise PyflexError(
                         "Config value '%s' does not have the same number of "
